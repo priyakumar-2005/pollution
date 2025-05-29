@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollution Feedback Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #28a745;
+        }
+        .btn-success {
+            margin-top: 20px;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info i {
+            color: #28a745;
+            margin-right: 10px;
+        }
+        .map-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        iframe {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Pollution Feedback Form</h1>
+        <p>We value your feedback on pollution awareness.</p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container content">
+        <h2>Share Your Thoughts</h2>
+        <form>
+            <!-- Name -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" pattern="[0-9]{10}" required>
+                <div class="form-text">Please enter a valid 10-digit phone number.</div>
+            </div>
+
+            <!-- Feedback -->
+            <div class="mb-3">
+                <label for="feedback" class="form-label">Your Feedback</label>
+                <textarea class="form-control" id="feedback" rows="4" placeholder="Write your feedback here..." required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-success">Submit Feedback</button>
+        </form>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Location: ISBT Building, Kashmere Gate, New Delhi, India</p>
+            <p><i class="fas fa-phone-alt"></i> Phone: +91 11 2384 2178</p>
+            <p><i class="fas fa-envelope"></i> Email: info@dpcc.delhi.gov.in</p>
+        </div>
+
+        <!-- Google Maps Integration -->
+        <div class="map-container">
+            <h2>Find Us on Google Maps</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83905823138!2d77.06889702083953!3d28.52728031451725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03eacb6b7867%3A0x3d9e8e13f7ff2d49!2sISBT%20Building%2C%20Kashmere%20Gate%2C%20New%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1676755485683!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+   
+</body>
+</html>

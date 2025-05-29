@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Pollution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: azure;
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .card h2 {
+            color: #FFD700;
+            margin: 10px 0;
+        }
+        .card p {
+            font-size: 14px;
+            text-align: justify;
+            color:black;
+        }
+        .btn {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #FFD700;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Types of Pollution</h1>
+        <p>Explore the different types of pollution and learn about their causes, effects, and ways to reduce them.</p>
+        <div class="grid">
+            <div class="card">
+                <img src="images/air pollution.jpeg" alt="Air Pollution">
+                <h2>Air Pollution</h2>
+                <p>Air pollution occurs due to harmful gases, dust, or smoke in the atmosphere. It can lead to respiratory diseases and environmental damage.</p>
+                <a href="air pollution.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="images/water pollution.jpeg" alt="Water Pollution">
+                <h2>Water Pollution</h2>
+                <p>Water pollution contaminates rivers, lakes, and oceans through chemicals and plastics. It harms aquatic life and reduces water quality.</p>
+                <a href="water pollution.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="images/soil pollution.jpeg" alt="Soil Pollution">
+                <h2>Soil Pollution</h2>
+                <p>Soil pollution is caused by hazardous waste and pesticides, affecting plant growth and agricultural productivity.</p>
+                <a href="soil pollution.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="images/noise pollution.jpeg" alt="Noise Pollution">
+                <h2>Noise Pollution</h2>
+                <p>Noise pollution disrupts human and animal life with excessive sound. It causes stress, hearing loss, and behavioral changes in wildlife.</p>
+                <a href="noise pollution.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="images/light pollution.jpeg" alt="Light Pollution">
+                <h2>Light Pollution</h2>
+                <p>Light pollution is caused by excessive artificial lighting, obscuring the night sky and disrupting ecosystems.</p>
+                <a href="light pollution.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

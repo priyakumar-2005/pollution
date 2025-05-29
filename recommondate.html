@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitamin C Supplement Recommendations</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .card-header {
+      font-weight: bold;
+    }
+    .btn-bookmark {
+      background-color: #f0ad4e;
+      border-color: #f0ad4e;
+    }
+    .btn-bookmark:hover {
+      background-color: #ec971f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center mb-4">AI-Generated Vitamin C Supplement Recommendations</h2>
+
+    <!-- Supplement 1 -->
+    <div class="card">
+      <div class="card-header">
+        Vitamin C Boost - 1000mg
+      </div>
+      <div class="card-body">
+        <p><strong>Benefits:</strong> Boosts immunity, supports collagen production, promotes skin health.</p>
+        <p><strong>Dosage:</strong> Take 1 tablet daily after meals.</p>
+        <p><strong>Purchase Options:</strong></p>
+        <a href="https://www.amazon.com" target="_blank" class="btn btn-primary">Buy on Amazon</a>
+        <a href="https://www.iherb.com" target="_blank" class="btn btn-secondary">Buy on iHerb</a>
+        <button class="btn btn-bookmark" onclick="bookmarkSuggestion('Vitamin C Boost - 1000mg')">Bookmark</button>
+      </div>
+    </div>
+
+    <!-- Supplement 2 -->
+    <div class="card">
+      <div class="card-header">
+        Natural Vitamin C Complex - 500mg
+      </div>
+      <div class="card-body">
+        <p><strong>Benefits:</strong> Enhances immune function, supports healthy skin, improves absorption of iron.</p>
+        <p><strong>Dosage:</strong> Take 2 capsules per day with food.</p>
+        <p><strong>Purchase Options:</strong></p>
+        <a href="https://www.amazon.com" target="_blank" class="btn btn-primary">Buy on Amazon</a>
+        <a href="https://www.walgreens.com" target="_blank" class="btn btn-secondary">Buy on Walgreens</a>
+        <button class="btn btn-bookmark" onclick="bookmarkSuggestion('Natural Vitamin C Complex - 500mg')">Bookmark</button>
+      </div>
+    </div>
+
+    <!-- Supplement 3 -->
+    <div class="card">
+      <div class="card-header">
+        Vitamin C 1000mg - High Potency
+      </div>
+      <div class="card-body">
+        <p><strong>Benefits:</strong> Promotes healthy gums, teeth, and bones, enhances skin elasticity.</p>
+        <p><strong>Dosage:</strong> Take 1 capsule daily with water.</p>
+        <p><strong>Purchase Options:</strong></p>
+        <a href="https://www.amazon.com" target="_blank" class="btn btn-primary">Buy on Amazon</a>
+        <a href="https://www.iherb.com" target="_blank" class="btn btn-secondary">Buy on iHerb</a>
+        <button class="btn btn-bookmark" onclick="bookmarkSuggestion('Vitamin C 1000mg - High Potency')">Bookmark</button>
+        <a href="education page.html" class="btn btn-primary btn-lg text-center">Submit</a>
+      </div>
+    </div>
+  </div>
+ 
+
+  <script>
+    function bookmarkSuggestion(supplement) {
+      alert(supplement + " has been bookmarked!");
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
